@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '+254796318618';
 		const ADMIN_PASSWORD = 'martin2026';
 		const STORAGE_KEYS = { cars: 'martin-motors-cars', favorites: 'martin-motors-favorites', likes: 'martin-motors-likes' };
 		function readStored(key, fallback) {
