@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f3ef">
+	<title>Martin Motors | Find your next drive</title>
+	<meta name="description" content="Explore carefully selected cars at Martin Motors. Find your next drive and speak with our team on WhatsApp.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="announcement"><span>◆</span> A better way to find your next car <span>◆</span> Thoughtfully selected. Honestly priced.</div>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="#home" aria-label="Martin Motors home"><span class="brand-mark">M</span><span class="brand-name">MARTIN MOTORS<small>Good cars. Good people.</small></span></a>
+			<div class="nav-links"><a href="#inventory">Our cars</a><a href="#how-it-works">How it works</a><a href="#about">Our promise</a></div>
+			<div class="nav-actions">
+				<button class="icon-button" id="favoritesJump" aria-label="Show saved cars" title="Saved cars">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="count" id="favoriteCount">0</span>
+				</button>
+				<a class="button" data-whatsapp href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20l.9-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.3 8.2c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.4c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.4.7c.3.1.4.3.3.6-.1.5-.4 1-.9 1.3-.5.3-1 .4-1.6.2-1-.3-2.2-.9-3.3-2-1.1-1-1.8-2.3-2-3.2-.2-.6 0-1.2.3-1.6Z"/></svg> WhatsApp us</a>
+			</div>
+		</nav>
+	</header>
+	<main id="home">
+		<section class="hero" aria-label="Welcome to Martin Motors">
+			<img class="hero-image" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2200&q=85" alt="Sleek car parked on a sunlit mountain road">
+			<div class="hero-shade"></div>
+			<div class="hero-content">
+				<div class="eyebrow">The drive you've been looking for</div>
+				<h1>Good cars.<br><em>Better</em> journeys.</h1>
+				<p class="hero-copy">A handpicked collection of cars worth getting excited about. Browse at your pace. Talk to real people when you're ready.</p>
+				<div class="hero-buttons"><a class="button lime" href="#inventory">Explore our cars <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="button outline" data-whatsapp href="#contact">Ask us anything</a></div>
+			</div>
+			<div class="hero-note"><strong>Good cars, no guesswork.</strong> That's the Martin promise.</div>
+		</section>
+		<div class="search-wrap" id="search">
+			<form class="search-panel" id="searchForm">
+				<div class="search-top"><strong>Find your kind of car</strong><span>Every car checked, every detail upfront.</span></div>
+				<div class="filters">
+					<input class="field" id="keywordFilter" type="search" placeholder="Make, model, or keyword" aria-label="Search make, model, or keyword">
+					<select class="field" id="makeFilter" aria-label="Filter by make"><option value="">All makes</option></select>
+					<select class="field" id="bodyFilter" aria-label="Filter by body style"><option value="">Any body style</option><option>SUV</option><option>Sedan</option><option>Coupe</option><option>Hatchback</option><option>Truck</option><option>Convertible</option></select>
+					<select class="field" id="priceFilter" aria-label="Filter by maximum price"><option value="">Any price</option><option value="3500000">Up to KSh 3,500,000</option><option value="4000000">Up to KSh 4,000,000</option><option value="4500000">Up to KSh 4,500,000</option><option value="5500000">Up to KSh 5,500,000</option></select>
+					<button class="button" type="submit">Search cars <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+				</div>
+				<div class="search-bottom"><button type="button" class="text-button" id="resetFilters">Clear all filters</button><small>New arrivals added every week</small></div>
+			</form>
+		</div>
+		<section class="trust-row" aria-label="Why shop with us">
+			<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><strong>Inspected, not assumed</strong><small>Every car gets a thorough check</small></span></div>
+			<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18M5 7l1 14h12l1-14M9 7V4h6v3"/><path d="M9 12h6"/></svg></span><span><strong>Clear, honest pricing</strong><small>No surprises when you arrive</small></span></div>
+			<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><strong>Your pace, your choice</strong><small>No pressure. Ever.</small></span></div>
+			<div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H5l-1 4V4Z"/><path d="M8 9h8M8 12h5"/></svg></span><span><strong>Real people, right here</strong><small>Questions? Just ask us.</small></span></div>
+		</section>
+		<section class="inventory section" id="inventory">
+			<div class="section-heading">
+				<div><div class="eyebrow">The good stuff</div><h2>Find your next drive.</h2><p>Good cars, handpicked by people who love them.</p></div>
+				<div class="inventory-tools"><select class="sort-field" id="sortFilter" aria-label="Sort cars"><option value="featured">Sort: Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="year-desc">Newest first</option><option value="mileage-asc">Lowest mileage</option></select><div class="view-toggle" aria-label="Inventory view"><button class="active" data-view="grid" aria-label="Grid view" title="Grid view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button><button data-view="list" aria-label="List view" title="List view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 6h12M9 12h12M9 18h12M3 6h.01M3 12h.01M3 18h.01"/></svg></button></div></div>
+			</div>
+			<div class="results-line"><span><strong id="resultCount">0 cars</strong> in our collection</span><div class="active-filters" id="activeFilters"></div></div>
+			<div class="car-grid" id="carGrid" aria-live="polite"></div>
+		</section>
+		<section class="promo" id="about">
+			<div class="promo-inner">
+				<div><div class="eyebrow">A little different, by design</div><h2>Buying a car should feel this good.</h2><p>No pushy sales talk. No mystery fees. Just a genuinely good selection, the full story on every car, and a team who'll help you find the right fit.</p><a href="#how-it-works" class="button lime">Get to know us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+				<div class="promo-stats"><div class="promo-stat"><strong>100%</strong><span>Inspection transparency</span></div><div class="promo-stat"><strong>0</strong><span>Pushy sales pitches</span></div><div class="promo-stat"><strong>1:1</strong><span>Actual human help</span></div></div>
+			</div>
+		</section>
+		<section class="process section" id="how-it-works">
+			<div class="process-head"><div class="eyebrow">Easy does it</div><h2>From browsing to back roads.</h2><p>Three simple steps. Your next great drive is closer than you think.</p></div>
+			<div class="steps"><article class="step"><div class="step-number">01</div><h3>Find your favorite</h3><p>Browse our current collection, compare the details, and save the ones that catch your eye.</p></article><article class="step"><div class="step-number">02</div><h3>Have a real conversation</h3><p>Message us on WhatsApp. Ask questions, get the full story, or arrange a time to see it.</p></article><article class="step"><div class="step-number">03</div><h3>Take the wheel</h3><p>Come by for a look and a test drive. When it feels right, we'll make the next steps simple.</p></article></div>
+		</section>
+		<section class="contact-band" id="contact"><div class="contact-inner"><div><h2>Got a question? We're right here.</h2><p>Talk to our team directly. No forms disappearing into the void.</p></div><div class="contact-actions"><div class="contact-details"><strong>Martin Motors</strong>Mon–Sat · 9am–6pm</div><a class="button" data-whatsapp href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20l.9-4.7A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.3 8.2c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.4c.1.2 0 .4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.4.7c.3.1.4.3.3.6-.1.5-.4 1-.9 1.3-.5.3-1 .4-1.6.2-1-.3-2.2-.9-3.3-2-1.1-1-1.8-2.3-2-3.2-.2-.6 0-1.2.3-1.6Z"/></svg> Start a WhatsApp chat</a></div></div></section>
+	</main>
+	<footer>
+		<div class="footer-main">
+			<div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">M</span><span class="brand-name">MARTIN MOTORS<small>Good cars. Good people.</small></span></a><p>Thoughtfully selected cars, genuinely helpful people, and a better way to find your next drive.</p></div>
+			<div class="footer-col"><h3>Explore</h3><a href="#inventory">Browse all cars</a><a href="#inventory" data-footer-filter="SUV">SUVs</a><a href="#inventory" data-footer-filter="Sedan">Sedans</a><a href="#inventory" data-footer-filter="Coupe">Coupes</a></div>
+			<div class="footer-col"><h3>Martin Motors</h3><a href="#about">Our promise</a><a href="#how-it-works">How it works</a><a data-whatsapp href="#contact">Talk to the team</a><button class="admin-entry" id="adminOpen" type="button">Admin login</button></div>
+			<div class="footer-col"><h3>Come say hello</h3><p>123 Main Street<br>Your City, ST 00000</p><p>Mon–Sat, 9am–6pm</p><a data-whatsapp href="#contact">Message us on WhatsApp →</a></div>
+		</div>
+		<div class="footer-bottom"><span>© <span id="year"></span> Martin Motors. All rights reserved.</span><span>Good cars. No guesswork.</span></div>
+	</footer>
+	<div class="modal-backdrop" id="carModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="icon-button modal-close" id="modalClose" aria-label="Close vehicle details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg></button><img class="modal-image" id="modalImage" alt=""><div class="modal-content" id="modalContent"></div></div></div>
+	<div class="modal-backdrop admin-backdrop" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminHeading" hidden>
+		<div class="modal admin-modal">
+			<button class="icon-button modal-close" id="adminClose" type="button" aria-label="Close admin panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+			<div class="admin-header"><div class="eyebrow">Martin Motors</div><h2 id="adminHeading">Admin access</h2><p id="adminSubheading">Sign in to manage listings and see what shoppers like.</p></div>
+			<form class="admin-login-form" id="adminLoginForm">
+				<label for="adminPassword">Admin password</label>
+				<div class="admin-login-row"><input class="field" id="adminPassword" type="password" autocomplete="current-password" required><button class="button" type="submit">Sign in</button></div>
+				<p class="admin-error" id="adminLoginError" role="alert" hidden>That password doesn't match. Try again.</p>
+			</form>
+			<div class="admin-workspace" id="adminWorkspace" hidden>
+				<div class="admin-toolbar"><div class="admin-tabs" role="tablist" aria-label="Admin views"><button class="admin-tab active" id="adminInventoryTab" type="button" role="tab" aria-selected="true" data-admin-view="inventory">Vehicles</button><button class="admin-tab" id="adminLikesTab" type="button" role="tab" aria-selected="false" data-admin-view="likes">Most liked</button></div><button class="button" id="adminLogout" type="button">Sign out</button></div>
+				<section class="admin-view" id="adminInventoryView" role="tabpanel" aria-labelledby="adminInventoryTab">
+					<div class="admin-section-heading"><div><h3>Vehicle listings</h3><p>Add a car or update the details customers see.</p></div><button class="button" id="addVehicle" type="button">Add vehicle</button></div>
+					<form class="vehicle-form" id="vehicleForm" hidden>
+						<input id="vehicleId" type="hidden">
+						<label>Make<input class="field" id="vehicleMake" required></label>
+						<label>Model<input class="field" id="vehicleModel" required></label>
+						<label>Trim<input class="field" id="vehicleTrim" required></label>
+						<label>Year<input class="field" id="vehicleYear" type="number" min="1900" max="2100" required></label>
+						<label>Price (KSh)<input class="field" id="vehiclePrice" type="number" min="1" step="1" required></label>
+						<label>Mileage (km)<input class="field" id="vehicleMileage" type="number" min="0" step="1" required></label>
+						<label>Body style<select class="field" id="vehicleBody" required><option value="SUV">SUV</option><option value="Sedan">Sedan</option><option value="Coupe">Coupe</option><option value="Hatchback">Hatchback</option><option value="Truck">Truck</option><option value="Convertible">Convertible</option></select></label>
+						<label>Fuel<input class="field" id="vehicleFuel" required></label>
+						<label>Transmission<input class="field" id="vehicleTransmission" required></label>
+						<label>Color<input class="field" id="vehicleColor" required></label>
+						<label>Listing badge<input class="field" id="vehicleBadge" placeholder="Just arrived"></label>
+						<label class="vehicle-image-field">Image URL<input class="field" id="vehicleImage" type="url" placeholder="https://..."></label>
+						<label class="vehicle-description-field">Description<textarea class="field" id="vehicleDescription" rows="3" required></textarea></label>
+						<div class="vehicle-form-actions"><button class="button" type="submit" id="saveVehicle">Save vehicle</button><button class="button outline" id="cancelVehicle" type="button">Cancel</button></div>
+					</form>
+					<div class="admin-vehicle-list" id="adminVehicleList"></div>
+				</section>
+				<section class="admin-view" id="adminLikesView" role="tabpanel" aria-labelledby="adminLikesTab" hidden>
+					<div class="admin-section-heading"><div><h3>Most liked vehicles</h3><p>Sorted by shopper saves recorded in this browser.</p></div></div>
+					<div class="admin-vehicle-list" id="adminLikesList"></div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="compare-bar" id="compareBar"><span id="compareLabel">0 cars selected</span><button id="compareAction">Compare cars</button><button id="clearCompare">Clear</button></div>
+	<div class="toast" id="toast" role="status"></div>
+	<script src="index.js"></script>
+</body>
+</html>
